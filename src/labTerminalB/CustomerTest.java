@@ -46,10 +46,25 @@ public class CustomerTest {
 	}
 	
 	@Test
-	public void checkFrequentRenterPoints() {
+	public void oneMovieByTwoCustomer() {
 		
-		int renterPoints = me.getFrequentRenterPoints();
-		assert renterPoints == 1.5;
+		me.addRental(r1);
+		me2.addRental(r1);
+		
+		String output1 = "Rental Record for Nadir\r\n" + 
+				"	Spancer	33.5\r\n"
+		                 ;
+		if(output1.equals(me.statement()))
+		{
+			assert true;
+		}
+		String output2 = "Rental Record for Allah Ditta\r\n" + 
+				"	Spancer	33.5\r\n"
+		                 ;
+		if(output2.equals(me2.statement()))
+		{
+			assert true;
+		}
 		
 	}
 	
