@@ -41,9 +41,11 @@ public class Customer {
 		
 		/**
 		 * This method statement prints or display the overall 
-		 * Generated bill including Total Amount and Frequent Renter Points
+		 * Generated bill including Total Amount and Frequent Renter Points.
+		 * 
 		 * @param This Method doesn't take any parameter (nothing)	
 		 * @return String that contain (Amount and Renter Points) 
+		 * 
 		 */
 		
 		
